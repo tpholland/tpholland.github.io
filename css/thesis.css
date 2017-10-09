@@ -1,0 +1,31 @@
+body { font-family: 'Fanwood Text', serif; margin: 0; background-color:#F0F6F1; }
+body * { max-width: 950px; }
+article { padding: 4em; }
+h1 { color: #888; font-size: 300%; font-weight: 300; }
+h2 { font-weight: 300; }
+h3 { color: #333; font-size: 150%; font-variant: small-caps; font-weight: 300; }
+p, li { color: #333; font-size: 150%; line-height: 150%; }
+ul li { list-style-type: none; padding-left: 1.5em; text-indent: -2em; }
+ul li:before { content: '§ '; }
+a { border-bottom: 1px dotted #000; color: #000; text-decoration: none; }
+a:hover { border-bottom-color: #B57D95; color: #B57D95; }
+img { border: solid #FFF 10px; box-shadow: 3px 3px 6px #888; width:10em; }
+blockquote p { font-size: 110%; }
+q { quotes: '‘' '’' '“' '”'; }
+sup { line-height: 100% }
+sup a, .footnotes a { color: #888; font-size: 75%; border-bottom: none; }
+sup a:hover, .footnotes a:hover { border-bottom: 1px dotted #B57D95; color: #B57D95; }
+.footnotes p, .footnotes li { font-size: 100%; }
+.footnotes p { margin: 0.5em 0; }
+.footnotes li, sup a { padding-top: 3.5em; margin-top: -3.5em; }
+nav { position:fixed; top:0; background:#666; width: 100%; max-width: 100%; padding-left:1em; opacity: 0.9; }
+nav h2, nav ul, nav ul li { display:inline; padding:0; }
+nav h2, nav ul li { font-size: 150%; }
+nav ul li span { color: #F0F6F1; border-bottom: 1px solid #F0F6F1; }
+nav ul li:before { content: '| ';}
+nav ul li:first-child { color:transparent; }
+nav a { border-bottom: none; }
+nav h2 a { color: #B57D95; }
+nav a:hover, nav h2 a:hover { color: #888; }
+/* When screen is smaller than 600px */
+@media only screen and (max-width:600px){ body { font-size: 80%; } article { padding: 2em; } nav h2, nav ul li { font-size: 125% } }

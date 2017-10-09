@@ -1,0 +1,17 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html { height:100%; }
+body { height: 100%; font-family: 'Alegreya', serif; font-size: 100%; line-height: 1.5; color:#333; max-width: 60em; margin: 0 auto; padding:1em 10em; background-color: #FFF; background: linear-gradient(#FFFFFF, #EEFFEE); background-repeat: no-repeat; background-attachment: fixed; }
+h1 { padding: 1em 0; font-size: 300%; font-family:'Alegreya SC', serif; text-align: center; text-shadow: 1px 1px 3px #999; }
+img { display:block; margin:0 auto; height: 6em; width: 6em; background-color: #DFF; border: 0.5em solid #6FF; border-radius: 3em; }
+p, li { font-size: 150%; padding: 0; text-indent: 2.5em; -moz-hyphens: auto; -ms-hyphens: auto; -webkit-hyphens: auto; hyphens: auto; text-align: justify; }
+p:first-of-type {text-indent: -0.3em;}
+p:last-of-type {text-indent: 0; padding: 1em 0}
+.sc { font-family:'Alegreya SC', serif; }
+.dc { float: left; padding: 0; font-size: 3.45em; line-height: 0; margin: 0.14em 0.1em 0 0; height: 0.62em; text-indent:0; }
+.postdc { display: inline-block; height: 0.62em; }
+a { color: #333; background-color: #CFF; text-decoration: none; }
+a:hover { background-color: transparent; text-decoration: none; }
+/* When screen is small */
+@media only screen and (max-width:70em){ body { max-width: 60em; padding: 1em 8em; } }
+@media only screen and (max-width:50em){ body { font-size: 70%; max-width: 50em; padding: 1em 5em; } }
+@media only screen and (max-width:30em){ body { font-size: 50%; max-width: 50em; padding: 1em 4em; } }

@@ -1,0 +1,42 @@
+circle, path { cursor: pointer; }
+circle { pointer-events: all; }
+text { cursor: pointer; font: 12px nsan,sans-serif; }
+div#breadcrumb { 
+  float:left;
+  width:200px;
+  padding:100px 0;
+  }
+div#breadcrumb div {
+    background-color: #98D5EB;
+    color: #454033;
+    height: 75px;
+    margin: 5px;
+    padding: 20px;
+}
+div#breadcrumb div:nth-child(2) {
+    background-color: #6FC5E4;
+}
+div#breadcrumb div:nth-child(3) {
+    background-color: #42B5DC;
+}
+div#breadcrumb div:nth-child(3) {
+    background-color: #00A5D4;
+}
+div#breadcrumb div:last-child {
+    color: #000000;
+}
+div#wheel {
+  float:left;
+  }
+div#descriptor {
+  padding:100px 0;
+  float:left;
+  max-width:400px;
+  }
+div#descriptor p {
+  background-color:#B4A88C;
+  padding: 15px;
+  border-radius:15px;
+}
+.map1Stop1 { stop-color: #F58236; }
+.map1Stop2 { stop-color: #F26100; }

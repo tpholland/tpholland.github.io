@@ -1,0 +1,271 @@
+<html class="ng-scope" data-ng-app="app" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+    <style>
+        .ng-hide {
+            display: none !important;
+        }
+    </style>
+    <title class="ng-binding" data-ng-bind="title">MyShowcase &gt; Organisational Use &gt; Educational Institutions</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Automatically present professionally formatted showcases from existing documents, photos, video and more.">
+    <meta name="author" content="Myknowledgemap Ltd">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=500, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/favicon.ico">
+	<link href="//fonts.googleapis.com/css?family=Lato:400,300,700,900" rel="stylesheet" type="text/css">
+    <meta id="ogurl" property="og:url" content="//www.myshowcase.me/#!/organisation">
+    <meta id="ogtitle" property="og:title" content="MyShowcase > Organisational Use > Educational Institutions">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/Myshowcase-logo-small.png">
+    <meta property="og:image:secure_url" content="https://uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/Myshowcase-logo-small.png">
+    <meta property="og:description" content="Automatically present professionally formatted showcases from existing documents, photos, video and more.">
+
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+
+		//var loc = window.location.href;
+		//if (loc.indexOf('%2f%23') > -1 && loc.indexOf('#!') === -1 ) {
+          //window.location.href = loc.replace("%2f%23", "#!");
+		//}
+
+		var urlHash = window.location.hash;
+		if (urlHash.lastIndexOf("#access_token") === 0) 
+			window.location.hash = "#!/" + window.location.hash.substring(1);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Product styles --- Bootstrap updated from 3.2.0 to 3.3.1-->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/css/ms-bootstrap-theme.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/ng-tags-input/2.0.1/ng-tags-input.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.min.css">
+    <!-- Vendor libraries -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section id="content">
+        <div class="shuffle-animation ng-scope">
+<link class="ng-scope" href="./assets/main.css" rel="stylesheet">
+<style class="ng-scope">
+        #hero-box {
+            background-image: url("./assets/education.jpg");
+        }
+        .tab-pane {
+            padding: 0px;
+            border: none;
+        }
+		label {
+			font-family:'Lato';
+			font-size:16px;
+			font-weight:300;
+		}
+		@media only screen and (min-width: 1000px) and (max-width: 1285px) {
+			#hero-box {
+			background-position: -75px 0px;
+}
+    </style>
+
+<header scroll="" class="header ng-scope" style="position:fixed;top:0;left:0; background: #000;height: 68px;" ng-controller="HeaderController">
+    <div class="header-item with-site-logo" ng-class="{ active: isActive('/home')}">
+        <a href="https://www.myshowcase.me/"><strong style="color:#fff;">Switch to individual site</strong></a>
+    </div>
+    <nav class="nav-site">
+        <ul>
+            <li>
+                <a href="index.html">Organisational use</a>
+            </li>
+
+            <li>
+                <a class="active" href="./educational-institutions.html">For education</a>
+            </li>
+
+            <li>
+                <a href="./careers-services.html">For careers services</a>
+            </li>
+
+            <!--  
+            <li>
+                <a href="./employers.html">For employers</a>
+            </li>
+            -->
+        </ul>
+    </nav>
+    <div class="mobile-nav-toggle js-mobilenav">
+        <div class="icon icon-mobile-open toggle-nav-open js-mobilenav-toggle"></div>
+
+        <div class="icon icon-mobile-close toggle-nav-closed js-mobilenav-toggle-close"></div>
+    </div>
+</header>
+
+        <div class="row clearfix ng-scope">
+            <div class="col-md-12 column" id="hero-box">
+                <div id="right-box" width="100%">
+				
+                    <br>
+                    <img alt="Myshowcase.me Logo" src="./assets/logo.png" height="175px">
+					
+	
+                    <h2 style="font-size: 42px;">
+                        Myshowcase.me for Educational Institutions<br>
+                        <!--<img alt="140x140" width="100%" src="../myshowcase/img/banner.jpg" style="z-index:0;opacity:1;position:absolute;">-->
+                    </h2>
+				
+                </div>
+            </div>
+        </div><!-- Banner -->
+
+    <div class="ng-scope" style="height:65px; background:#fff;"></div><!-- about  -->
+
+	<!-- About -->
+<div class="ng-scope" id="why">
+                                <div class="container-full">
+                                        <div class="container">
+                                                <div class="row bm-remove animate" data-anim-type="fadeInRight">
+                                                        <div class="col-md-12">
+                                                                <div class="modern" style="text-align:left; font-size:20px;">
+                                                                        <h1 class="heading-headline" style="text-align:center;">A student-centric approach</h1><br><br>
+                                                                        <!--<div id="illustration"><img class="illustration" width="100%" src="img/mac-org.png"></div>-->
+                                                                        <p style="text-align:center;">While traditional eportfolios are driven by institutional requirements, Myshowcase.me is focussed first and foremost on supporting the individual beyond the life of the academic programme, with organisational processes added as an extension. This has profound implications for the power and flexibility of the overall system.</p><br>
+                                                                        <p style="text-align:center;">It’s designed to be a tool for life for the individual. As such, it allows the academic institution to offer students something of real and enduring value after they leave the institution.</p>
+                                                                        <br>
+                                                                        <br>
+                                                                        <br>
+                                                                        <p style="text-align:center; font-size:34px; color:#009FE3;">So what makes Myshowcase.me different from a traditional eportfolio?</p><br><br>                                                                  
+                                                                        <div class="row">
+                                                                        <div class="col-md-12">
+                                                                        <ul>
+                                                                        <li style="color:#009FE3;"><strong>At the end of a course, the student walks away with their information. It’s their info, and continues to be available to them.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>Myshowcase.me was designed from the outset to be a personal utility tool.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>Students’ data lives where the student wants to put it: in Myshowcase, in Dropbox, or stored in a range of cloud web apps.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>Myshowcase.me links to the students’ personal tools of choice, which they can use to populate showcases-- Youtube, Evernote, Vimeo, Google Maps—the students themselves decide which tools they use, and Myshowcase fits around them.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>Myshowcase can be personalised by and to the individual learner. They decide where they bring stuff from, how they organise and map it, how it’s displayed, who they share it with, and which organisations that they want to link to.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>Individuals can be linked to more than one institution concurrently—so, for example, they can link their account to a university for accredited coursework, with a professional body for chartership and CPD purposes, and with an employer for work purposes</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>The institution can provide multiple frameworks: competency frameworks, curriculum frameworks, and so on. As well as using these to organise their resources, students can also tap into publicly shared frameworks from other places.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>Whilst the student has complete privacy control over their content, institutions are provided with monitoring tools by framework, and can view and annotate showcases that have been submitted by the student.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>The subscription model to unlock the institutional features is based upon a modest annual charge per student.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>When the student leaves, they have continued full access to their personal account.</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>Institutional features include:</strong></li><br>
+                                                                        <ul style="color:#009FE3;">
+                                                                        <li style="color:#009FE3;"><strong>manage organisation structures and groups</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>setup and allocate frameworks</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>invite and auto enroll options for individual to join</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>monitor progress of individual students and groups</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>review (assignment) showcases and provide commentary and feedback</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>organisation landing page</strong></li><br>
+                                                                        <li style="color:#009FE3;"><strong>and lots more to come</strong></li><br>
+                                                                        </ul><br>
+                                                                        </ul>
+                                                                        </div>                                                                  
+                                                                        </div>                                                          
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>		 
+		<!-- about  -->
+		<home-footer class="ng-scope"><!-- footer top -->
+<footer id="footer" style="border-top:1px solid #eee;">
+    <div class="container-full" style="background:#fff;">
+        <div class="container">
+            <div class="bm-remove animate">
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#!/about"><strong>About</strong></a><br>
+
+                            </li>
+
+                            <li>
+                                <a href="https://myknowledgemap.zendesk.com/hc/en-us/categories/200191638-Myshowcase" target="_blank"><strong>Help</strong></a><br>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                   <div class="float_right">
+                        <div class="socile social" style="margin-top:-10px;">
+                            <ul>
+                                <!--<li>
+                                    <a class="fa fa-facebook" href="https://www.facebook.com/MyKnowledgeMap"></a>
+                                </li>-->
+
+                                <li>
+                                    <a class="fa fa-twitter" href="https://twitter.com/myshowcaseme"></a>
+                                </li>
+
+                                <!--<li>
+                                    <a class="fa fa-linkedin" href="https://www.linkedin.com/company/myknowledgemap"></a>
+                                </li>
+
+                                <li>
+                                    <a class="fa fa-rss" href="#" ></a>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> <!-- footer-top -->
+<!-- footer -->
+
+<footer id="footer">
+    <div class="container-full">
+        <div class="container">
+            <div class="bm-remove animate">
+                <div class="col-xs-12 col-sm-7 col-md-7">
+                    <div class="socile">
+                        <ul>
+                            <li>
+                                <a href="https://www.myshowcase.me/#!/termssummary">T&amp;CS</a>
+                            </li>
+
+                            <!--<li>
+                                <a href="#">Security</a>
+                            </li>-->
+
+                            <!--<li>
+                                <a href="#">Privacy</a>
+                            </li>-->
+
+                            <li>
+                                <a href="https://www.myshowcase.me/#!/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-5 col-md-5">
+                    <div class="float_right">
+                        <p>Developed by <a href="https://myknowledgemap.com/">Myknowledgemap Ltd <i class="fa fa-arrow-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer><!-- /#footer -->
+</home-footer>
+</div>
+    </section>
+</div>
+</div>
+    </div>
+</body></html>

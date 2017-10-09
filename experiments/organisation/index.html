@@ -1,0 +1,331 @@
+<html class="ng-scope" data-ng-app="app" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+    <style>
+        .ng-hide {
+            display: none !important;
+        }
+    </style>
+    <title class="ng-binding" data-ng-bind="title">MyShowcase &gt; Organisational Use</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Automatically present professionally formatted showcases from existing documents, photos, video and more.">
+    <meta name="author" content="Myknowledgemap Ltd">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=500, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/favicon.ico">
+	<link href="//fonts.googleapis.com/css?family=Lato:400,300,700,900" rel="stylesheet" type="text/css">
+    <meta id="ogurl" property="og:url" content="//www.myshowcase.me/#!/organisation">
+    <meta id="ogtitle" property="og:title" content="MyShowcase > Organisational Use">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/Myshowcase-logo-small.png">
+    <meta property="og:image:secure_url" content="https://uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/favicons/Myshowcase-logo-small.png">
+    <meta property="og:description" content="Automatically present professionally formatted showcases from existing documents, photos, video and more.">
+
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+
+		//var loc = window.location.href;
+		//if (loc.indexOf('%2f%23') > -1 && loc.indexOf('#!') === -1 ) {
+          //window.location.href = loc.replace("%2f%23", "#!");
+		//}
+
+		var urlHash = window.location.hash;
+		if (urlHash.lastIndexOf("#access_token") === 0) 
+			window.location.hash = "#!/" + window.location.hash.substring(1);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Product styles --- Bootstrap updated from 3.2.0 to 3.3.1-->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="//uiframework.mkmapps.com/v1.0.21/lib/products/myshowcase/css/ms-bootstrap-theme.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/ng-tags-input/2.0.1/ng-tags-input.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.min.css">
+    <!-- Vendor libraries -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section id="content">
+        <div class="shuffle-animation ng-scope">
+<link class="ng-scope" href="./assets/main.css" rel="stylesheet">
+<style class="ng-scope">
+        #hero-box {
+            background-image: url("./assets/career-hands.jpg");
+        }
+        .tab-pane {
+            padding: 0px;
+            border: none;
+        }
+		label {
+			font-family:'Lato';
+			font-size:16px;
+			font-weight:300;
+		}
+		@media only screen and (min-width: 1000px) and (max-width: 1285px) {
+			#hero-box {
+			background-position: -75px 0px;
+}
+    </style>
+
+<header scroll="" class="header ng-scope" style="position:fixed;top:0;left:0; background: #000;height: 68px;" ng-controller="HeaderController">
+    <div class="header-item with-site-logo" ng-class="{ active: isActive('/home')}">
+        <a href="https://www.myshowcase.me/"><strong style="color:#fff;">Switch to individual site</strong></a>
+    </div>
+    <nav class="nav-site">
+        <ul>
+            <li>
+                <a class="active" href="index.html">Organisational use</a>
+            </li>
+
+            <li>
+                <a href="./educational-institutions.html">For education</a>
+            </li>
+
+            <li>
+                <a href="./careers-services.html">For careers services</a>
+            </li>
+
+            <!--  
+            <li>
+                <a href="./employers.html">For employers</a>
+            </li>
+            -->
+        </ul>
+    </nav>
+    <div class="mobile-nav-toggle js-mobilenav">
+        <div class="icon icon-mobile-open toggle-nav-open js-mobilenav-toggle"></div>
+
+        <div class="icon icon-mobile-close toggle-nav-closed js-mobilenav-toggle-close"></div>
+    </div>
+</header>
+
+        <div class="row clearfix ng-scope">
+            <div class="col-md-12 column" id="hero-box">
+                <div id="right-box" width="100%">
+				
+                    <br>
+                    <img alt="Myshowcase.me Logo" src="./assets/logo.png" height="175px">
+					
+	
+                    <h2 style="font-size: 42px;">
+                        Build and showcase a complete picture of capability, including work and educational achievements<br>
+                        <!--<img alt="140x140" width="100%" src="../myshowcase/img/banner.jpg" style="z-index:0;opacity:1;position:absolute;">-->
+                    </h2>
+				
+                </div>
+            </div>
+        </div><!-- Banner -->
+
+    <div class="ng-scope" style="height:65px; background:#fff;"></div><!-- about  -->
+
+	<!-- About -->
+			<div class="ng-scope" id="why">
+				<div class="container-full">
+					<div class="container">
+						<div class="row bm-remove animate" data-anim-type="fadeInRight">
+							<div class="col-md-12">
+								<div class="modern" style="text-align:left; font-size:20px;">
+									<h1 class="heading-headline" style="text-align:center;">Myshowcase.me for Organisations</h1><br><br>
+									<div id="illustration"><img class="illustration" src="./assets/mac-org.png" width="100%"></div>
+									<p style="text-align:center;">Myshowcase.me for Organisations is a new kind of eportfolio.  Showcase users’ achievements and experiences.  Capture experiences from the cloud to produce a multi-dimensional view.</p><br>
+									<p style="text-align:center;">Organisations use Myshowcase.me to guide and monitor users as they gather and build evidence to meet objectives and targets, allowing for the presentation of personal capabilities and projects by managing the sharing of documents, photos, videos and more in a single showcase. Reporting tools provide a real time picture of progress.</p>
+<form action="http://newsletters.myknowledgemap.com/t/y/s/zjtjll/" method="post" id="subForm">
+									<h2 style="text-align:center;">Keep up to date with the latest Myshowcase.me news.</h2>
+    <p style="text-align:center;">
+        <input id="fieldEmail" class="form-control" name="cm-zjtjll-zjtjll" type="email" placeholder="Enter your email address" required />
+        <input class="sign-btn" type="submit" value="Subscribe" />
+    </p>
+</form>
+									<br>
+									<div class="row">
+									<div class="col-md-6">
+									<ul>
+									<li style="color:#009FE3;"><strong>Allow digital information to flow more easily through your organisation.</strong></li><br>
+									<li style="color:#009FE3;"><strong>Users can prepare personal capability statements supported by evidence from a wide range of sources.</strong></li><br>
+									<li style="color:#009FE3;"><strong>Users can also prepare a summary of their personal project activity.</strong></li><br>
+									</ul>
+									</div>
+									<div class="col-md-6">
+									<ul>
+									<li style="color:#009FE3;"><strong>Encourage users to continue to build and grow a complete picture of their working life.</strong></li><br>
+									<li style="color:#009FE3;"><strong>Provide a structure for the presentation of achievements gained and goals met.</strong></li><br>
+									<li style="color:#009FE3;"><strong><a href="./educational-institutions.html" style="color:#009FE3;">Provide a radical alternative or enhancement to traditional academic eportfolios.</a></strong></li><br>
+									</ul>
+									</div>
+									</div>
+									<br>
+									<p style="text-align:center; font-size:34px; color:#009FE3;">It’s never too soon to start collecting achievements to support future career growth and development.</p><br>
+									<br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+								<img class="ng-scope" src="./assets/myshowcase-banner.jpg" alt="Hands Banner" width="100%"><br class="ng-scope">
+								<div class="container ng-scope">
+									<div class="row bm-remove animate" data-anim-type="fadeInRight">
+										<div class="col-md-12">				
+									<br>
+									<br>
+									<h1 class="heading-headline" style="text-align:center;">Myshowcase.me Supports Skills and Development</h1><br><br>
+									<p style="text-align:center;"><strong>Supporting Individuals and taking steps to assist them throughout their career journey is a commitment that your Organisations can make with Myshowcase.me.</strong></p>
+									<br>
+									<br>
+									<div class="row">
+									<div class="col-md-6">
+									<p>The user’s journey may start at University, in employment, a professional place of study or anywhere there is a requirement and a need to provide the resources to achieve future potential. Individuals are also able to be guided in best practice with Myshowcase.me</p>
+									</div>
+									<div class="col-md-6">
+									<p>Through the inclusion of any digitally stored achievement users are able to present professional showcases that focus on their individual capabilities at every stage of their career. Tutors and managers are able to assist through the use of competency and curriculum frameworks and reporting tools to build and develop relevant achievements.</p>
+									</div>
+									</div>
+									<br>
+									<br>
+									<hr>
+									<br>								
+									<h1 class="heading-headline" style="text-align:center;">Myshowcase.me at Work</h1><br><br>
+									<p style="text-align:center;"><strong>Employer engagement is important to both individuals preparing for their initial foray into the workplace, as well as promoting achievements gained once at work, Myshowcase.me supports the user throughout.</strong></p>
+									<br>
+									<br>
+									<div class="row">
+									<div class="col-md-6">
+									<p>Competition for positions in an organisation whether for new applicants or existing employees is always strong – as an employer it’s necessary to effectively determine an individual’s suitability for a role based on their capabilities and achievements. Myshowcase.me includes a customisable Capability Statement template that can help ensure professional showcases are produced and presented every time.</p>
+									</div>
+									<div class="col-md-6">
+									<p>Engaging with other parties including clients/customers/third parties often requires an organisation to promote its self – again Myshowcase.me allows for relevant achievements and activities of Individuals, Groups/Teams to be professionally showcased.</p>
+									</div>
+									</div>
+									<br>
+									<br>
+									<br>
+									<br>
+									<p style="text-align:center; font-size:34px; color:#009FE3;">The system is flexible enough to meet the requirements of different types of individuals and user organisations.</p>
+									<br>
+									<br>
+									<p style="text-align:center;"><strong>Employer Organisations</strong></p>
+									<p style="text-align:center;"><strong>Membership Organisations</strong></p>
+									<p style="text-align:center;"><strong><a href="#!/educational-institutions" style="color:#009FE3;">Educational Organisations</a></strong></p>
+									<br>
+									<br>
+									<br>
+									<p style="text-align:center" class="sign-btn"><a target="_blank" href="//uiframework.mkmapps.com/latest/lib/products/myshowcase/files/Myshowcase-Brochure-2015.pdf"><i class="fa fa-file-pdf-o"></i> FIND OUT MORE INFORMATION</a></p><br>									
+									<br>
+									<h3>GET IN TOUCH WITH OUR TEAM</h3>
+									<hr>
+									<div id="crmWebToEntityForm" align="center"><meta http-equiv="content-type" content="text/html;charset = UTF-8">  <form class="ng-pristine ng-valid" action="https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads481357000003214005" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return checkMandatery()" accept-charset="UTF-8">  <input style="display:none;" name="xnQsjsdp" value="66872f93bf5d76aa9f636bf47dd6bb2616e08961adbc2d271505b03fa7a17503" type="text">  <input name="zc_gad" id="zc_gad" value="" type="hidden">  <input style="display:none;" name="xmIwtLD" value="67f8585d813313136f2ef54fbd5449e463a54936f95db21da289e514a0f7d107" type="text">  <input style="display:none;" name="actionType" value="TGVhZHM=" type="text"> <input style="display:none;" name="returnURL" value="https://www.myshowcase.me" type="text"> <br><br><table style="background-color:white;color:black" border="0" cellpadding="6" cellspacing="0" width="600"><tbody><tr><td colspan="2" style="color:black;font-family:Arial;font-size:14px;" align="left"><strong>Myshowcase.me</strong></td></tr> <tr><td style="font-size:12px;font-family:Arial;width:200px;" nowrap="nowrap" align="left">Name<span style="color:red;">*</span> </td><td style="width:250px;"><input style="width:250px;" maxlength="40" name="First Name" type="text"></td></tr><tr><td style="font-size:12px;font-family:Arial;width:200px;" nowrap="nowrap" align="left">Surname<span style="color:red;">*</span> </td><td style="width:250px;"><input style="width:250px;" maxlength="80" name="Last Name" type="text"></td></tr><tr><td style="font-size:12px;font-family:Arial;width:200px;" nowrap="nowrap" align="left">Email<span style="color:red;">*</span> </td><td style="width:250px;"><input style="width:250px;" maxlength="100" name="Email" type="text"></td></tr><tr><td style="font-size:12px;font-family:Arial;width:200px;" nowrap="nowrap" align="left">Phone </td><td style="width:250px;"><input style="width:250px;" maxlength="30" name="Phone" type="text"></td></tr><tr><td style="font-size:12px;font-family:Arial;width:200px;" nowrap="nowrap" align="left">Mobile<span style="color:red;">*</span> </td><td style="width:250px;"><input style="width:250px;" maxlength="30" name="Mobile" type="text"></td></tr><tr><td style="font-size:12px;font-family:Arial;width:200px;" nowrap="nowrap" align="left">Company </td><td style="width:250px;"><input style="width:250px;" maxlength="100" name="Company" type="text"></td></tr><tr><td style="font-size:12px;font-family:Arial;width:200px;" nowrap="nowrap" align="left">Message<span style="color:red;">*</span> </td><td style="width:250px;"><input style="width:250px;" maxlength="255" name="LEADCF5" type="text"></td></tr><tr><td colspan="2" style="padding-top: 15px;" align="center"><input style="font-size:12px;color:black" value="Send us your message" type="submit"> <input style="font-size:12px;color:black" value="Clear" type="reset"> </td></tr></tbody></table><script> var mndFileds=new Array('First Name','Last Name','Email','Mobile','LEADCF5');var fldLangVal=new Array('Name','Surname','Email','Mobile','Message');function reloadImg(){if(document.getElementById('imgid').src.indexOf('&d') !== -1 ){document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();}else{document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();}}function checkMandatery(){var name='';var email='';for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebToLeads481357000003214005'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}}try{if(fieldObj.name == 'Last Name'){name = fieldObj.value;}}catch(e){}}}try{if($zoho){var firstnameObj = document.forms['WebToLeads481357000003214005']['First Name'];if(firstnameObj){name = firstnameObj.value +' '+name;}$zoho.salesiq.visitor.name(name);var emailObj = document.forms['WebToLeads481357000003214005']['Email'];if(emailObj){email = emailObj.value;$zoho.salesiq.visitor.email(email);}}}catch(e){}}</script>  </form></div>
+									
+									
+									
+</div>
+								</div>
+							</div>
+						
+					
+				
+									
+			 
+		<!-- about  -->
+		<home-footer class="ng-scope"><!-- footer top -->
+<footer id="footer" style="border-top:1px solid #eee;">
+    <div class="container-full" style="background:#fff;">
+        <div class="container">
+            <div class="bm-remove animate">
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#!/about"><strong>About</strong></a><br>
+
+                            </li>
+
+                            <li>
+                                <a href="https://myknowledgemap.zendesk.com/hc/en-us/categories/200191638-Myshowcase" target="_blank"><strong>Help</strong></a><br>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                   <div class="float_right">
+                        <div class="socile social" style="margin-top:-10px;">
+                            <ul>
+                                <!--<li>
+                                    <a class="fa fa-facebook" href="https://www.facebook.com/MyKnowledgeMap"></a>
+                                </li>-->
+
+                                <li>
+                                    <a class="fa fa-twitter" href="https://twitter.com/myshowcaseme"></a>
+                                </li>
+
+                                <!--<li>
+                                    <a class="fa fa-linkedin" href="https://www.linkedin.com/company/myknowledgemap"></a>
+                                </li>
+
+                                <li>
+                                    <a class="fa fa-rss" href="#" ></a>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> <!-- footer-top -->
+<!-- footer -->
+
+<footer id="footer">
+    <div class="container-full">
+        <div class="container">
+            <div class="bm-remove animate">
+                <div class="col-xs-12 col-sm-7 col-md-7">
+                    <div class="socile">
+                        <ul>
+                            <li>
+                                <a href="https://www.myshowcase.me/#!/termssummary">T&amp;CS</a>
+                            </li>
+
+                            <!--<li>
+                                <a href="#">Security</a>
+                            </li>-->
+
+                            <!--<li>
+                                <a href="#">Privacy</a>
+                            </li>-->
+
+                            <li>
+                                <a href="https://www.myshowcase.me/#!/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-5 col-md-5">
+                    <div class="float_right">
+                        <p>Developed by <a href="https://myknowledgemap.com/">Myknowledgemap Ltd <i class="fa fa-arrow-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer><!-- /#footer -->
+</home-footer>
+</div>
+    </section>
+</div>
+</div>
+    </div>
+</body></html>
